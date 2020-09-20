@@ -4,7 +4,92 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Social Media Dashboard
-        link(rel="stylesheet", href="css/styles.css")
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="css/styles-min.css")
     body
-        h1.title Social Media Dashboard
+        header.header
+            h1.header__title Social Media Dashboard
+            h2.header__subtitle Total Followers: 23,004
+            .dark-mode-container
+                h2.header__subtitle Dark Mode
+                button#switch.switch.switch--active
+        article.first-row
+            .card.card-facebook
+                .card__title
+                    img(src="assets/img/icon-facebook.svg", alt="Facebook").card__icon
+                    .card__user @nathanf
+                .card__content
+                    .card__number 1987
+                    .card__text Followers
+                    .card__status.card__status--up
+                        img(src="assets/img/icon-up.svg", alt="Up")
+                        span 12 Today
+
+            .card.card-twitter
+                .card__title
+                    img(src="assets/img/icon-twitter.svg", alt="Twitter").card__icon
+                    .card__user @nathanf
+                .card__content
+                    .card__number 1044
+                    .card__text Followers
+                    .card__status.card__status--up
+                        img(src="assets/img/icon-up.svg", alt="Up")
+                        span 99 Today
+            
+            .card.card-instagram
+                .card__title
+                    img(src="assets/img/icon-instagram.svg", alt="Instagram").card__icon
+                    .card__user @realnathanf
+                .card__content
+                    .card__number 11k
+                    .card__text Followers
+                    .card__status.card__status--up
+                        img(src="assets/img/icon-up.svg", alt="Up")
+                        span 1099 Today
+            
+            .card.card-youtube
+                .card__title
+                    img(src="assets/img/icon-youtube.svg", alt="Youtube").card__icon
+                    .card__user Nathan F.
+                .card__content
+                    .card__number 8239
+                    .card__text Subscribers
+                    .card__status.card__status--down
+                        img(src="assets/img/icon-down.svg", alt="Down")
+                        span 144 Today
+
         script(src="js/scripts-min.js")
+
+//-   Overview - Today
+
+//-   Page Views
+//-   87
+//-   3%
+
+//-   Likes
+//-   52
+//-   2%
+
+//-   Likes
+//-   5462
+//-   2257%
+
+//-   Profile Views
+//-   52k
+//-   1375%
+
+//-   Retweets
+//-   117
+//-   303%
+
+//-   Likes
+//-   507
+//-   553%
+
+//-   Likes
+//-   107
+//-   19%
+
+//-   Total Views
+//-   1407
+//-   12%
