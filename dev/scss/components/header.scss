@@ -1,14 +1,37 @@
 .header {
+    width: 90%;
+    margin: auto;
+
+    @include laptop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+        margin-top: 1rem;
+    }
+
     &__title {
         font-size: 20px;
         color: var(--very-dark-blue);
         margin: 5px 0;
+
+        @include laptop {
+            font-size: 35px;
+        }
     }
 
     &__subtitle {
         font-size: 14px;
         margin: 0;
         color: var(--dark-grayish-blue);
+    }
+
+    &__titles {
+        width: 100%;
+
+        @include laptop {
+            width: 60%;
+        }
     }
 }
 
@@ -20,6 +43,13 @@
     max-width: 100%;
     margin-top: 25px;
     padding-top: 25px;
+
+    @include laptop {
+        border-top: none;
+        width: 15%;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .switch {

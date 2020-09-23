@@ -10,17 +10,20 @@ html {
     &::before {
         content: "";
         width: 100vw;
-        height: 40%;
+        height: 250px;
         display: block;
         top: 0;
         left: 0;
         z-index: -1;
-        // background-color: var(--very-pale-blue);
+        background-color: var(--very-pale-blue);
         position: absolute;
     }
+
+    @include laptop {}
 }
 
 body {
+    margin: 0;
     padding: 20px 10px;
     background-color: var(--white);
 }
