@@ -105,4 +105,9 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &:hover {
+        background-color: var(--card-bg-hover);
+        cursor: pointer;
+    }
 }

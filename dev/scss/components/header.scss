@@ -62,6 +62,7 @@
     display: flex;
     align-items: center;
     outline: none;
+    cursor: pointer;
 
     &::before {
         content: "";
@@ -75,8 +76,14 @@
     }
 
     &--active {
+        background-image: var(--toggle-dark);
+
         &::before {
             transform: translateX(21px);
         }
+    }
+
+    &:hover {
+        background-image: var(--toggle-dark);
     }
 }

@@ -30,13 +30,21 @@
 
 .second-row {
     width: 85%;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-columns: repeat(1, 1fr);
 
     &__title {
-        // grid-column: 1 / -1;
+        grid-column: 1 / -1;
         color: var(--dark-grayish-blue);
         margin-top: 35px;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include laptop {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
