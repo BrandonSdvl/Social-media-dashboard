@@ -129,27 +129,41 @@ body {
         -ms-transform: translateX(21px);
             transform: translateX(21px); }
 
-.first-row {
+.row {
   width: 100%;
   display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  grid-gap: 25px;
-  margin-top: 50px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 40px;
   margin-left: auto;
   margin-right: auto; }
   @media screen and (min-width: 600px) {
-    .first-row {
-      grid-template-columns: repeat(2, 1fr);
+    .row {
       width: 90%; } }
   @media screen and (min-width: 1024px) {
-    .first-row {
-      grid-template-columns: repeat(4, 1fr);
+    .row {
       width: 85%; } }
+
+.first-row {
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 25px;
+  margin-top: 40px; }
+  @media screen and (min-width: 600px) {
+    .first-row {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (min-width: 1024px) {
+    .first-row {
+      grid-template-columns: repeat(4, 1fr); } }
+
+.second-row {
+  width: 85%;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1, 1fr); }
+  .second-row__title {
+    color: var(--dark-grayish-blue);
+    margin-top: 35px;
+    margin-bottom: 15px; }
 
 .card {
   width: 80vw;
@@ -179,6 +193,9 @@ body {
   @media screen and (min-width: 600px) {
     .card {
       width: 100%; } }
+  .card--small {
+    padding: 20px 0;
+    height: 120px; }
   .card-facebook {
     border-top: 5px solid var(--facebook); }
   .card-twitter {
@@ -206,6 +223,12 @@ body {
     font-size: 12px;
     margin-bottom: 15px;
     font-weight: 700; }
+    .card__title--small {
+      width: 80%;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
   .card__user {
     margin-left: 5px; }
   .card__number {
@@ -214,6 +237,8 @@ body {
     font-size: 40px;
     margin-bottom: 5px;
     color: var(--very-dark-blue); }
+    .card__number--small {
+      font-size: 30px; }
   .card__text {
     text-align: center;
     letter-spacing: 3px;
@@ -243,3 +268,14 @@ body {
       color: var(--lime-green); }
     .card__status--down {
       color: var(--bright-red); }
+  .card__content--small {
+    margin-top: 10px;
+    width: 80%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
