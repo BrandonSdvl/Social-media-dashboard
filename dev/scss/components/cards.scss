@@ -1,7 +1,7 @@
 .card {
     width: 80vw;
     margin: auto;
-    background-color: var(--light-grayish-blue);
+    background-color: var(--card-background);
     height: 200px;
     border-radius: 5px;
     display: flex;
@@ -9,7 +9,7 @@
     padding: 30px 0;
     justify-content: center;
     align-items: center;
-    color: var(--dark-grayish-blue);
+    color: var(--text);
 
     @include tablet {
         // width: 250px;
@@ -62,7 +62,7 @@
         font-weight: 700;
         font-size: 40px;
         margin-bottom: 5px;
-        color: var(--very-dark-blue);
+        color: var(--text-second);
 
         &--small {
             font-size: 30px;
@@ -74,7 +74,7 @@
         letter-spacing: 3px;
         font-weight: 400;
         font-size: 14px;
-        color: var(--dark-grayish-blue);
+        color: var(--text);
         text-transform: uppercase;
         margin-bottom: 15px;
     }

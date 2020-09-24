@@ -8,15 +8,11 @@
     --instagram: linear-gradient(to right, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%)100%)1;
     --youtube: hsl(348, 97%, 39%);
 
-    // Light
-    --white: hsl(0, 0%, 100%);
+    --background: hsl(0, 0%, 100%);
     --card-bg-hover: hsl(232, 33%, 91%);
-    --very-pale-blue: hsl(225, 100%, 98%);
-    --light-grayish-blue: hsl(227, 47%, 96%);
-    --dark-grayish-blue: hsl(228, 12%, 44%);
-    --very-dark-blue: hsl(230, 17%, 14%);
-    --toggle-light: hsl(230, 22%, 74%);
-
-    // Dark
-    --toggle-dark: linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%)100%);
+    --top-background: hsl(225, 100%, 98%);
+    --card-background: hsl(227, 47%, 96%);
+    --text: hsl(228, 12%, 44%);
+    --text-second: hsl(230, 17%, 14%);
+    --toggle-background: hsl(230, 22%, 74%);
 }

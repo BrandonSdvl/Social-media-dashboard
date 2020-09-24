@@ -15,7 +15,7 @@ html {
         top: 0;
         left: 0;
         z-index: -1;
-        background-color: var(--very-pale-blue);
+        background-color: var(--top-background);
         position: absolute;
     }
 
@@ -25,6 +25,6 @@ html {
 body {
     margin: 0;
     padding: 20px 10px;
-    background-color: var(--white);
+    background-color: var(--background);
     overflow-x: hidden;
 }
