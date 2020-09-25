@@ -19,7 +19,7 @@ gulp.task("babel", () => {
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        // .pipe(terser())
+        .pipe(terser())
         .pipe(gulp.dest("./public/js"));
 });
 
