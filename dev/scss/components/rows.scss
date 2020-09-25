@@ -8,16 +8,12 @@
     @include tablet {
         width: 90%;
     }
-
-    @include laptop {
-        width: 85%;
-    }
 }
 
 .first-row {
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 25px;
-    margin-top: 40px;
+    margin-top: 37px;
 
     @include tablet {
         grid-template-columns: repeat(2, 1fr);
@@ -29,7 +25,6 @@
 }
 
 .second-row {
-    width: 85%;
     grid-gap: 20px;
     grid-template-columns: repeat(1, 1fr);
 

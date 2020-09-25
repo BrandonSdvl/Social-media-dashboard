@@ -13,9 +13,9 @@ html(lang="en")
                 h1.header__title Social Media Dashboard
                 h2.header__subtitle Total Followers: 23,004
             .dark-mode-container
-                h2.header__subtitle Dark Mode
-                button#switch.switch
-        article.row.first-row
+                label: h2.header__subtitle Dark Mode
+                button#switch.switch(aria-label="Dark Theme")
+        .row.first-row
             .card.card-facebook
                 .card__title
                     img(src="assets/img/icon-facebook.svg", alt="Facebook").card__icon

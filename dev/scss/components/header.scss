@@ -1,22 +1,21 @@
 .header {
     width: 90%;
     margin: auto;
+    margin-top: 1.3rem;
 
     @include laptop {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 85%;
-        margin-top: 1rem;
     }
 
     &__title {
-        font-size: 20px;
+        font-size: 25px;
         color: var(--text-second);
         margin: 5px 0;
 
         @include laptop {
-            font-size: 35px;
+            font-size: 45px;
         }
     }
 
