@@ -1,7 +1,7 @@
 .header {
-    width: 90%;
+    width: 80%;
     margin: auto;
-    margin-top: 1.3rem;
+    margin-top: .8rem;
 
     @include laptop {
         display: flex;
@@ -15,7 +15,7 @@
         margin: 5px 0;
 
         @include laptop {
-            font-size: 45px;
+            font-size: 30px;
         }
     }
 
@@ -23,6 +23,7 @@
         font-size: 14px;
         margin: 0;
         color: var(--text);
+        font-weight: 700;
     }
 
     &__titles {
@@ -62,6 +63,7 @@
     align-items: center;
     outline: none;
     cursor: pointer;
+    margin-left: 1px;
 
     &::before {
         content: "";

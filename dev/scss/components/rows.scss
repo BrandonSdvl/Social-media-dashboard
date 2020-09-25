@@ -6,14 +6,14 @@
     margin-right: auto;
 
     @include tablet {
-        width: 90%;
+        width: 80%;
     }
 }
 
 .first-row {
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 25px;
-    margin-top: 37px;
+    margin-top: 40px;
 
     @include tablet {
         grid-template-columns: repeat(2, 1fr);
@@ -31,8 +31,8 @@
     &__title {
         grid-column: 1 / -1;
         color: var(--text);
-        margin-top: 35px;
-        margin-bottom: 25px;
+        margin-top: 40px;
+        margin-bottom: 0;
     }
 
     @include tablet {
