@@ -1,6 +1,6 @@
 const buttonSwitch = document.getElementById('switch')
 const styles = document.documentElement.style;
-let dark = false
+let theme = JSON.parse(localStorage.getItem('theme')) ? JSON.parse(localStorage.getItem('theme')) : { dark: false }
 
 const lightTheme = {
     '--background': 'hsl(0, 0%, 100%)',
@@ -22,16 +22,28 @@ const darkTheme = {
     '--toggle-background': 'linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%)100%)'
 }
 
-buttonSwitch.addEventListener('click', (e) => {
-    e.target.classList.toggle('switch--active')
-    dark ? changeTheme(lightTheme) : changeTheme(darkTheme)
-    dark = !dark
+buttonSwitch.addEventListener('click', () => {
+    theme.dark ? changeTheme(lightTheme) : changeTheme(darkTheme)
+    theme.dark = !theme.dark
+    localStorage.setItem('theme', JSON.stringify(theme))
 })
 
 const changeTheme = theme => {
     const customStyles = Object.keys(theme);
-    console.log(customStyles)
+    buttonSwitch.classList.toggle('switch--active')
     for (const style of customStyles) {
         styles.setProperty(style, theme[style]);
     }
 };
+
+const loadTheme = () => {
+    if (localStorage.getItem('theme')) {
+        if (theme.dark) {
+            changeTheme(darkTheme)
+        }
+    } else {
+        localStorage.setItem('theme', JSON.stringify(theme))
+    }
+}
+
+loadTheme()
