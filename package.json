@@ -32,5 +32,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-terser": "^1.4.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001239"
+  }
 }
